@@ -1,0 +1,119 @@
+html{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    animation-name: reel;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes reel{
+    0%{background: url('../Content/Media/4DAD9A88-F009-40CD-9884-F6A51ED1F3AE.jpeg');background-size: cover;}
+    10%{background: url('../Content/Media/IMG_8464.jpeg');background-size: cover;}
+    30%{background: url('../Content/Media/IMG_8597.jpeg');background-size: cover;}
+    50%{background: url('../Content/Media/IMG_8625.jpeg');background-size: cover;}
+    70%{background: url('../Content/Media/IMG_2194.jpeg');background-size: cover;}
+    90%{background: url('../Content/Media/IMG_1844.jpeg');background-size: cover;}
+    100%{background: url('../Content/Media/4DAD9A88-F009-40CD-9884-F6A51ED1F3AE.jpeg');background-size: cover;}
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logoContainer{
+    border-radius: 50%;
+    width: 20vw;
+}
+
+.logo{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.tabs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tab{
+    width: 10vw;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(207, 18, 49, 1);
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(254, 202, 9);
+    font-size: 1.5vw;
+    transition: scale 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.tab:hover{
+    scale: 1.2;
+    background-color: rgb(254, 202, 9);
+    color: rgb(207, 18, 49);
+}
+
+.icons{
+    display: flex;
+    gap: 5vw;
+}
+.icon{
+    max-width: 3vw;
+    max-width: 100%;
+}
+
+
+.footnote{
+    text-align: center;
+    height: 5%;
+    width: 100%;
+    color: white;
+    font-size: 1vw;
+}
+
+
+@media screen and (max-width: 800px) {
+    .logoContainer{
+        width: 25vh;
+    }
+
+    .tabs{
+        max-width: 50%;
+        flex-wrap: wrap;
+        gap: 2vw;
+        scale: 1.5;
+    }
+
+    .tab{
+        width: 10vh;
+        font-size: 1vh;
+    }
+
+    .icon{
+        width: 5vh;
+        max-width: 100%;
+    }
+
+}
