@@ -1,0 +1,94 @@
+body{
+    margin: 0px;
+    background: rgb(0, 0, 0);
+    background-size: contain;
+    background-attachment: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header */
+.header{
+    background: url('../../Content/Media/IMG_8685.jpeg');
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 30vw;
+    padding: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.logoContainer{
+    background: url('../../Content/Icons/Brand Assets/Assets/Logo variations/Logo - vertical solid circle outline text1 cropped.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.tabs{
+    width: 100vw;
+    max-height: 10vw;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+    border-bottom: 0.1vw solid white;
+}
+
+.tab{
+    max-width: 10vw;
+    max-height: 10vw;
+    /* background-color:rgb(254, 202, 9); */
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 4px; */
+    color: rgb(40, 40, 40);
+    font-size: 1.5vw;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: scale 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.tab:hover{
+    scale: 1.1;
+    background-color: rgb(254, 202, 9);
+    color: rgb(207, 18, 49);
+}
+
+
+/* body */
+.body{
+    margin: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 20%;
+    padding: 0.5vw;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .column{
+      flex: 40%;
+      max-width: 100%;
+    }
+}
+
+img{
+    margin-top: 0.5vw;
+    width: 100%;
+}
+
+
