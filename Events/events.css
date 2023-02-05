@@ -8,7 +8,7 @@ body{
 
 /* Header */
 .header{
-    background: url('../../Content/Media/IMG_8572.jpeg');
+    background: url('../Content/media/gallery/IMG_8597.jpeg');
     background-size: cover;
     background-position: 50% 50%;
     height: 30vw;
@@ -16,14 +16,11 @@ body{
     padding-left: 5vw;
     padding-right: 5vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: stretch;
-    gap: 8px;
 }
 
 .logoContainer{
-    background: url('../../Content/Icons/Brand Assets/Assets/Logo variations/Logo - vertical solid circle outline text1 cropped.png');
+    background: url('../Content/icons/Logo - vertical solid circle outline text1 cropped.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 10vw;
@@ -56,6 +53,14 @@ body{
     transition: scale 0.3s, background-color 0.3s, color 0.3s;
 }
 
+.menuTab{
+    display: none;
+}
+
+.dropdown{
+    display: none;
+}
+
 .tab:hover{
     scale: 1.1;
     background-color: rgb(254, 202, 9);
@@ -67,7 +72,6 @@ body{
     flex: 50%;
     margin: 2vw;
     color: rgb(40, 40, 40);
-    font-size: 1vw;
     gap: 1vw;
     display: flex;
     justify-content: center;
@@ -76,7 +80,7 @@ body{
 }
 
 .event{
-    min-width: 20vw;
+    min-width: none;
     max-width: 30%;
     display: flex;
     flex-direction: column;
@@ -91,6 +95,7 @@ body{
     padding: 1vw;
     font-size: 1vw;
     color: rgb(255, 255, 255);
+    background-color: black;
 }
 
 a, h1{
@@ -118,7 +123,7 @@ a, h1{
 
 .playButton{
     background-color: transparent;
-    background: rgb(254, 202, 9) url('../../Content/Icons/Play Button/icons8-play-button-circled-96-cropped.png');
+    background: rgb(254, 202, 9) url('../Content/icons/icons8-play-button-circled-96-cropped.png');
     background-size: contain;
     background-position: center;
     height: 4vw;
@@ -127,45 +132,43 @@ a, h1{
 }
 
 .imageContainer{
-    background: url('../../Content/Media/La Tana.jpg');
     aspect-ratio: 1;
-    background-color: lightgrey;
-
 }
 
-#laTanaNights{
-    background: url('../../Content/Media/IMG_8597.jpeg');
+#openBarNight{
+    background: url('../Content/media/posters/La\ Tana\ Nights\ Sq\ 1.2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    aspect-ratio: 1;
 }
 
 #bottomlessBuffet{
-    background: url('../../Content/Media/Brunch\ Poster\ 8.9.jpg');
+    background: url('../Content/media/posters/Brunch\ Poster\ 8.9.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#boozyBingo{
-    background: url('../../Content/Media/Bingo\ Poster\ 1.12.jpg');
+#liveMusic{
+    background: url('../Content/media/posters/Artist\ Night\ Poster\ 1.8.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
-#liveMusic{
-    background: url('../../Content/Media/Artist\ Night\ Poster\ 1.6.1.jpg');
+#boozyBingo{
+    background: url('../Content/media/posters/Bingo\ Poster\ 1.12.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
 }
+
+
 
 #jazzClub{
-    background: url('../../Content/Media/Jazz\ Poster\ 2.5.1.jpg');
+    background: url('../Content/media/posters/Jazz\ Poster\ 2.5.1.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
 #serieA{
-    background: url('../../Content/Media/Lecce\ Hub\ Poster\ 5.6.jpg');
+    background: url('../Content/media/posters/Lecce\ Hub\ Poster\ 5.6.jpg');
     background-repeat: no-repeat;
     background-size: cover;  
 }
@@ -181,3 +184,150 @@ a, h1{
     font-size: 1vw;
 }
 
+
+@media screen and (max-width: 800px) {
+    
+    .logoContainer{
+        background: url('../Content/icons/Logo - vertical solid circle outline text1 cropped.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 10vh;
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+    
+    .tabs{
+        width: 100%;
+        max-height: 10vh;
+        display: flex;
+        border-bottom: 0.1vw solid white;
+    }
+
+    .menuTab{
+        max-width: 10vh;
+        max-height: 10vh;
+        /* background-color:rgb(254, 202, 9); */
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(40, 40, 40);
+        font-size: 1.5vh;
+        text-decoration: none;
+        user-select: none;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition: scale 0.3s, background-color 0.3s, color 0.3s;
+    }
+
+    .menuTab:hover{
+        background-color: rgb(254, 202, 9);
+        color: rgb(207, 18, 49);
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .dropdown{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10vh;
+        left: 0%;
+        right: 0%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        height: 30vh;
+        gap: 1vw;
+    }
+
+    .dropdownOption{
+        display: none;
+    }
+
+    .optionStyle{
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(40, 40, 40);
+        font-size: 1.5vh;
+    }
+
+    .optionStyle:hover{
+        background-color: rgb(254, 202, 9);
+        color: rgb(207, 18, 49);
+    }
+
+    .body{
+        flex: 50%;
+        margin: 5vh;
+        color: rgb(40, 40, 40);
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .summary{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1vh;
+        font-size: 1.5vh;
+        color: rgb(255, 255, 255);
+        background-color: black;
+    }
+    
+    a, h1{
+        text-decoration: none;
+        color: rgb(254, 202, 9);
+    }
+    
+    .buttons{
+        display: flex;
+        align-items: center;
+        gap: 2vh;
+    }
+    
+    .ticketButton{
+        width: fit-content;
+        height: fit-content;
+        font-size: 1vh;
+        color: white;
+        background-color: rgb(254, 202, 9);
+        padding: 1.5vh;
+        border-radius: 4px;
+        color: rgb(207, 18, 49);
+        transition: scale 0.3s, background-color 0.3s, color 0.3s;
+    }
+    
+    .playButton{
+        background-color: transparent;
+        background: rgb(254, 202, 9) url('../Content/icons/icons8-play-button-circled-96-cropped.png');
+        background-size: contain;
+        background-position: center;
+        height: 4vh;
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+
+    .event{
+        flex: 40%;
+        max-width: 100%;
+      }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .event{
+        flex: 100%;
+        max-width: 100%;
+      }
+
+}

@@ -10,13 +10,13 @@ html{
 }
 
 @keyframes reel{
-    0%{background: url('../Content/Media/4DAD9A88-F009-40CD-9884-F6A51ED1F3AE.jpeg');background-size: cover;}
-    10%{background: url('../Content/Media/IMG_8464.jpeg');background-size: cover;}
-    30%{background: url('../Content/Media/IMG_8597.jpeg');background-size: cover;}
-    50%{background: url('../Content/Media/IMG_8625.jpeg');background-size: cover;}
-    70%{background: url('../Content/Media/IMG_2194.jpeg');background-size: cover;}
-    90%{background: url('../Content/Media/IMG_1844.jpeg');background-size: cover;}
-    100%{background: url('../Content/Media/4DAD9A88-F009-40CD-9884-F6A51ED1F3AE.jpeg');background-size: cover;}
+    0%{background: url('./Content/media/gallery/4DAD9A88-F009-40CD-9884-F6A51ED1F3AE.jpeg');background-size: cover;}
+    10%{background: url('./Content/media/gallery/IMG_8464.jpeg');background-size: cover;}
+    30%{background: url('./Content/media/gallery/IMG_8597.jpeg');background-size: cover;}
+    50%{background: url('./Content/media/gallery/IMG_8625.jpeg');background-size: cover;}
+    70%{background: url('./Content/media/gallery/IMG_2194.jpeg');background-size: cover;}
+    90%{background: url('./Content/media/gallery/IMG_1844.jpeg');background-size: cover;}
+    100%{background: url('./Content/media/gallery/4DAD9A88-F009-40CD-9884-F6A51ED1F3AE.jpeg');background-size: cover;}
 }
 
 body{
@@ -70,7 +70,7 @@ body{
 }
 
 .tab:hover{
-    scale: 1.2;
+    scale: 1.1;
     background-color: rgb(254, 202, 9);
     color: rgb(207, 18, 49);
 }

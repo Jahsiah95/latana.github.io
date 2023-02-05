@@ -8,7 +8,7 @@ body{
 
 /* Header */
 .header{
-    background: url('../../Content/Media/IMG_8685.jpeg');
+    background: url('../Content/media/gallery/E4172DB2-3127-45A3-A4BE-22EA67A3C02E.jpeg');
     background-size: cover;
     background-position: 50% 50%;
     height: 30vw;
@@ -16,14 +16,11 @@ body{
     padding-left: 5vw;
     padding-right: 5vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: stretch;
-    gap: 8px;
 }
 
 .logoContainer{
-    background: url('../../Content/Icons/Brand Assets/Assets/Logo variations/Logo - vertical solid circle outline text1 cropped.png');
+    background: url('../Content/icons/Logo - vertical solid circle outline text1 cropped.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 10vw;
@@ -43,17 +40,25 @@ body{
 .tab{
     max-width: 10vw;
     max-height: 10vw;
-    /* background-color:rgb(254, 202, 9); */
     aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-radius: 4px; */
     color: rgb(40, 40, 40);
     font-size: 1.5vw;
-    text-decoration: none;
     background-color: rgba(255, 255, 255, 0.3);
     transition: scale 0.3s, background-color 0.3s, color 0.3s;
+}
+a{
+    text-decoration: none;
+}
+
+.menuTab{
+    display: none;
+}
+
+.dropdown{
+    display: none;
 }
 
 .tab:hover{
@@ -80,6 +85,82 @@ body{
 }
 
 @media screen and (max-width: 800px) {
+    
+    .logoContainer{
+        background: url('../Content/icons/Logo - vertical solid circle outline text1 cropped.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 10vh;
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+    
+    .tabs{
+        width: 100%;
+        max-height: 10vh;
+        display: flex;
+        border-bottom: 0.1vw solid white;
+    }
+
+    .menuTab{
+        max-width: 10vh;
+        max-height: 10vh;
+        /* background-color:rgb(254, 202, 9); */
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(40, 40, 40);
+        font-size: 1.5vh;
+        text-decoration: none;
+        user-select: none;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition: scale 0.3s, background-color 0.3s, color 0.3s;
+    }
+
+    .menuTab:hover{
+        background-color: rgb(254, 202, 9);
+        color: rgb(207, 18, 49);
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .dropdown{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10vh;
+        left: 0%;
+        right: 0%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        height: 30vh;
+        gap: 1vw;
+    }
+
+    .dropdownOption{
+        display: none;
+    }
+
+    .optionStyle{
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(40, 40, 40);
+        font-size: 1.5vh;
+        color: rgb(254, 202, 9);
+    }
+
+    .optionStyle:hover{
+        background-color: rgb(254, 202, 9);
+        color: rgb(207, 18, 49);
+    }
     .column{
       flex: 40%;
       max-width: 100%;
@@ -91,4 +172,11 @@ img{
     width: 100%;
 }
 
+@media screen and (max-width: 500px){
 
+    .column{
+        flex: 100%;
+        max-width: 100%;
+      }
+
+}

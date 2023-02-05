@@ -8,22 +8,19 @@ body{
 
 /* Header */
 .header{
-    background: url('../../Content/Media/IMG_8635.jpeg');
+    background: url('../Content/media/gallery/IMG_8635.jpeg');
     background-size: cover;
-    background-position: 50% 40%;
+    background-position: 50% 50%;
     height: 30vw;
     padding: 2vw;
     padding-left: 5vw;
     padding-right: 5vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: stretch;
-    gap: 8px;
 }
 
 .logoContainer{
-    background: url('../../Content/Icons/Brand Assets/Assets/Logo variations/Logo - vertical solid circle outline text1 cropped.png');
+    background: url('../Content/icons/Logo - vertical solid circle outline text1 cropped.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 10vw;
@@ -43,17 +40,25 @@ body{
 .tab{
     max-width: 10vw;
     max-height: 10vw;
-    /* background-color:rgb(254, 202, 9); */
     aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-radius: 4px; */
     color: rgb(40, 40, 40);
     font-size: 1.5vw;
-    text-decoration: none;
     background-color: rgba(255, 255, 255, 0.3);
     transition: scale 0.3s, background-color 0.3s, color 0.3s;
+}
+a{
+    text-decoration: none;
+}
+
+.menuTab{
+    display: none;
+}
+
+.dropdown{
+    display: none;
 }
 
 .tab:hover{
@@ -92,6 +97,10 @@ h2{
     max-width: 50vw;
 }
 
+.signature{
+    max-width: 30%;
+}
+
 a{
     color: rgb(255, 255, 255);
 }
@@ -103,7 +112,7 @@ a{
 }
 
 .building{
-    background: url('../../Content/Media/La\ Pizzica.jpg');
+    background: url('../Content/media/gallery/La\ Pizzica.jpg');
     background-size: cover;
     width: 50%;
     aspect-ratio: 1;
@@ -115,15 +124,207 @@ iframe{
     aspect-ratio: 1;
 }
 
-.reviews{
-    padding: 5vw;
+.menu{
+    height: 30vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10vw;
+    margin: 10vw;
+    font-size: 1.5vw;
+    text-decoration: underline;
+    background: url('../Content/media/posters/Menu 2.1-00 (2).jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.menuLink{
+    height: 100%;
+    width: 50%;
+}
+
+.reviews{
+    background: url('../Content/media/gallery/La\ Tana.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    min-height: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .review{
-    padding: 1vw;
-    height: 10vw;
-    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    font-style: italic;
+    max-width: 40%;
+}
+
+.partners{
+    /* height: 5vh; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.partner{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.partnerLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 20%;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .logoContainer{
+        background: url('../Content/icons/Logo - vertical solid circle outline text1 cropped.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 10vh;
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+    
+    .tabs{
+        width: 100%;
+        max-height: 10vh;
+        display: flex;
+        border-bottom: 0.1vw solid white;
+    }
+
+    .menuTab{
+        max-width: 10vh;
+        max-height: 10vh;
+        /* background-color:rgb(254, 202, 9); */
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(40, 40, 40);
+        font-size: 1.5vh;
+        text-decoration: none;
+        user-select: none;
+        background-color: rgba(255, 255, 255, 0.3);
+        transition: scale 0.3s, background-color 0.3s, color 0.3s;
+    }
+
+    .menuTab:hover{
+        background-color: rgb(254, 202, 9);
+        color: rgb(207, 18, 49);
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .dropdown{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10vh;
+        left: 0%;
+        right: 0%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        text-align: center;
+        height: 30vh;
+        gap: 1vw;
+    }
+
+    .dropdownOption{
+        display: none;
+    }
+
+    .optionStyle{
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(40, 40, 40);
+        font-size: 1.5vh;
+        color: rgb(254, 202, 9);
+    }
+
+    .optionStyle:hover{
+        background-color: rgb(254, 202, 9);
+        color: rgb(207, 18, 49);
+    }
+    .column{
+      flex: 40%;
+      max-width: 50%;
+    }
+
+    /* body */    
+    .bio{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1{
+        font-size: 5vh;
+    }
+    
+    h2{
+        font-size: 3vh;
+    }
+    
+    .para{
+        font-size: 1.5vh;
+        text-align: center;
+        max-width: 90%;
+    }
+    
+    a{
+        color: rgb(255, 255, 255);
+    }
+    
+    .location{
+        display: flex;
+        width: 100%;
+        background-color: whitesmoke;
+    }
+    
+    iframe{
+        width: 50%;
+        aspect-ratio: 1;
+    }
+
+    .menu{
+        font-size: 1.5vh;
+    }
+
+    .reviews{
+        background-attachment: scroll;
+    }
+
+    .review{
+        text-align: center;
+        color: white;
+        font-size: 1.5vh;
+        font-style: italic;
+        max-width: 40%;
+    }
+
+    .partners{
+
+    }
 }
