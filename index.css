@@ -111,6 +111,10 @@ body{
         font-size: 1vh;
     }
 
+    .icons{
+        margin-top: 5vh;
+    }
+
     .icon{
         width: 5vh;
         max-width: 100%;
