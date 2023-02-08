@@ -40,12 +40,10 @@ body{
 .tab{
     max-width: 10vw;
     max-height: 10vw;
-    /* background-color:rgb(254, 202, 9); */
     aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-radius: 4px; */
     color: rgb(40, 40, 40);
     font-size: 1.5vw;
     text-decoration: none;
@@ -204,9 +202,8 @@ a, h1{
     }
 
     .menuTab{
-        max-width: 10vh;
-        max-height: 10vh;
-        /* background-color:rgb(254, 202, 9); */
+        width: 10vh;
+        height: 10vh;
         aspect-ratio: 1;
         display: flex;
         justify-content: center;
@@ -312,8 +309,7 @@ a, h1{
         background-size: contain;
         background-position: center;
         height: 4vh;
-        aspect-ratio: 1;
-        border-radius: 50%;
+        width: 4vh;
     }
 
     .event{
