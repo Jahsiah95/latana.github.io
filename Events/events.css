@@ -29,7 +29,7 @@ body{
 }
 
 .tabs{
-    width: 100vw;
+    width: 100%;
     max-height: 10vw;
     display: flex;
     justify-content: flex-end;
@@ -38,9 +38,9 @@ body{
 }
 
 .tab{
-    max-width: 10vw;
-    max-height: 10vw;
-    aspect-ratio: 1;
+    width: 10vw;
+    height: 10vw;
+    /* aspect-ratio: 1; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +125,7 @@ a, h1{
     background-size: contain;
     background-position: center;
     height: 4vw;
-    aspect-ratio: 1;
+    width: 4vw;
     border-radius: 50%;
 }
 
@@ -183,7 +183,7 @@ a, h1{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     
     .logoContainer{
         background: url('../Content/icons/Logo - vertical solid circle outline text1 cropped.png');
@@ -198,7 +198,6 @@ a, h1{
         width: 100%;
         max-height: 10vh;
         display: flex;
-        border-bottom: 0.1vw solid white;
     }
 
     .menuTab{
