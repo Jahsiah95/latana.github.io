@@ -8,7 +8,7 @@ body{
 
 /* Header */
 .header{
-    background: url('../Content/media/gallery/E4172DB2-3127-45A3-A4BE-22EA67A3C02E.jpeg');
+    background: url('../Content/media/gallery/IMG_8503.jpeg');
     background-size: cover;
     background-position: 50% 50%;
     height: 30vw;
@@ -71,6 +71,11 @@ a{
 /* body */
 .body{
     margin: 5vw;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.slide{
     display: flex;
     flex-wrap: wrap;
 }
@@ -83,6 +88,29 @@ a{
     padding: 0.5vw;
     max-width: 100%;
 }
+
+.prev, .next{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    position: fixed;
+    top: 50%;
+    /* width: auto; */
+    height: 10vh;
+    width: 5vh;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
 
 @media screen and (max-width: 600px) {
     
